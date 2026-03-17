@@ -42,14 +42,14 @@ const Footer = () => {
       <div className="absolute top-0 left-[-5%] w-[300px] h-[300px] bg-[#ff8c00]/10 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-[-5%] w-[300px] h-[300px] bg-[#ff0055]/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
     
 
         {/* --- MAIN FOOTER GRID (TIGHTER SPACING) --- */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-8 mb-12">
           
           {/* Brand & Bio (Spans 5) */}
-          <div className="sm:col-span-2 lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left" data-aos="fade-right" data-aos-delay="100">
+          <div className="sm:col-span-2 lg:col-span-5 flex flex-col items-start text-left" data-aos="fade-right" data-aos-delay="100">
             <div className="flex items-center font-mono font-black tracking-tighter text-2xl select-none cursor-pointer group mb-4" onClick={scrollToTop}>
               <span className="text-[#ff8c00] drop-shadow-[0_0_8px_rgba(255,140,0,0.5)] group-hover:-translate-y-1 transition-transform duration-300">&lt;</span>
               <span className="text-white transform -skew-x-12 mx-1">/</span>
@@ -68,7 +68,7 @@ const Footer = () => {
                   href={social.link} 
                   target="_blank" 
                   rel="noreferrer" 
-                  className={`w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 transition-all duration-300 ${social.color} hover:border-transparent hover:-translate-y-1`}
+                  className={`w-10 h-10 shrink-0 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 transition-all duration-300 ${social.color} hover:border-transparent hover:-translate-y-1`}
                 >
                   {social.icon}
                 </a>
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links (Spans 3) */}
-          <div className="flex flex-col items-center lg:items-start lg:col-span-3" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex flex-col items-start lg:col-span-3" data-aos="fade-up" data-aos-delay="200">
             <h4 className="text-white font-black tracking-[0.2em] text-[10px] uppercase mb-4 border-b-2 border-[#ff8c00]/50 pb-1">Quick Links</h4>
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -94,26 +94,26 @@ const Footer = () => {
           </div>
 
           {/* Contact Info (Spans 4) */}
-          <div className="flex flex-col items-center lg:items-start lg:col-span-4" data-aos="fade-left" data-aos-delay="300">
+          <div className="flex flex-col items-start lg:col-span-4" data-aos="fade-left" data-aos-delay="300">
             <h4 className="text-white font-black tracking-[0.2em] text-[10px] uppercase mb-4 border-b-2 border-[#ff0055]/50 pb-1">Contact Details</h4>
             <div className="flex flex-col gap-4 text-gray-400 font-medium text-sm">
               <a href="mailto:prathameshingle72@gmail.com" className="flex items-center gap-3 hover:text-[#ff8c00] transition-colors duration-300 group">
-                <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#ff8c00] group-hover:border-[#ff8c00] transition-all duration-300 shadow-md">
+                <div className="w-8 h-8 shrink-0 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#ff8c00] group-hover:border-[#ff8c00] transition-all duration-300 shadow-md">
                   <FaEnvelope size={12} />
                 </div>
-                prathameshingle72@gmail.com
+                <span className="break-all">prathameshingle72@gmail.com</span>
               </a>
               <a href="tel:+919146005002" className="flex items-center gap-3 hover:text-[#ff0055] transition-colors duration-300 group">
-                <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#ff0055] group-hover:border-[#ff0055] transition-all duration-300 shadow-md">
+                <div className="w-8 h-8 shrink-0 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#ff0055] group-hover:border-[#ff0055] transition-all duration-300 shadow-md">
                   <FaPhoneAlt size={12} />
                 </div>
-                +91 9146005002
+                <span>+91 9146005002</span>
               </a>
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white shadow-md">
+                <div className="w-8 h-8 shrink-0 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white shadow-md">
                   <FaMapMarkerAlt size={12} />
                 </div>
-                Pune, Maharashtra
+                <span>Pune, Maharashtra</span>
               </div>
             </div>
           </div>
@@ -122,12 +122,12 @@ const Footer = () => {
 
         {/* --- BOTTOM COPYRIGHT BAR (COMPACT) --- */}
         <div className="flex flex-col-reverse md:flex-row justify-between items-center pt-5 border-t border-white/10 gap-4 relative">
-          <p className="text-gray-500 font-bold text-[9px] uppercase tracking-[0.2em]">
+          <p className="text-gray-500 font-bold text-[9px] uppercase tracking-[0.2em] text-center md:text-left">
             &copy; {new Date().getFullYear()} Prathamesh Ingle. All Rights Reserved.
           </p>
           
           <div className="flex items-center gap-1.5 text-gray-400 font-bold text-[10px] tracking-widest bg-white/5 px-4 py-2 rounded-full border border-white/5">
-            Built with <FaReact className="text-[#00D8FF] mx-0.5" style={{ animation: 'spin-slow 4s linear infinite' }} size={14} /> & <FaHeart className="text-[#ff0055] mx-0.5 animate-pulse" size={12} />
+            Built with <FaReact className="text-[#00D8FF] mx-0.5 shrink-0" style={{ animation: 'spin-slow 4s linear infinite' }} size={14} /> & <FaHeart className="text-[#ff0055] mx-0.5 shrink-0 animate-pulse" size={12} />
           </div>
         </div>
 
