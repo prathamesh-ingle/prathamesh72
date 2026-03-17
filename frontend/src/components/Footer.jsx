@@ -21,7 +21,7 @@ const Footer = () => {
 
   const socials = [
     { icon: <FaGithub size={16} />, link: "https://github.com/prathamesh-ingle", color: "hover:bg-white hover:text-[#1a1a1a] hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]" },
-    { icon: <FaLinkedinIn size={16} />, link: "https://linkedin.com/in/prathamesh-ingle", color: "hover:bg-[#0A66C2] hover:text-white hover:shadow-[0_0_20px_rgba(10,102,194,0.5)]" },
+    { icon: <FaLinkedinIn size={16} />, link: "https://www.linkedin.com/in/prathamesh-ingle-662382342", color: "hover:bg-[#0A66C2] hover:text-white hover:shadow-[0_0_20px_rgba(10,102,194,0.5)]" },
     { icon: <FaTwitter size={16} />, link: "https://twitter.com/your-twitter", color: "hover:bg-[#1DA1F2] hover:text-white hover:shadow-[0_0_20px_rgba(29,161,242,0.5)]" },
     { icon: <FaEnvelope size={16} />, link: "mailto:prathameshingle72@gmail.com", color: "hover:bg-[#ea4335] hover:text-white hover:shadow-[0_0_20px_rgba(234,67,53,0.5)]" }
   ];
