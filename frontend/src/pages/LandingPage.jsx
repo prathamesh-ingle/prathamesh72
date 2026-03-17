@@ -804,7 +804,7 @@ const LandingPage = () => {
                 {
                   title: "LetsChat",
                   desc: "A full‑stack, Gemini‑powered hub unifying AI symptom checking, real‑time chat, Stream‑based video calling, and creative media generation.",
-                  photo: "/photo/chatmaster.png",
+                  photo: "/photo/letschat.png",
                   tags: ["React", "Stream", "Tailwind", "Node.js"],
                   github: "https://github.com/prathamesh-ingle/LetsChat",
                   live: "https://letschat-1-r5so.onrender.com/",
