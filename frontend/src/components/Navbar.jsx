@@ -300,7 +300,7 @@ const Navbar = () => {
 
             {/* CTA Button -> Directly to LinkedIn */}
             <a 
-              href="https://linkedin.com/in/prathamesh-ingle" 
+              href="https://www.linkedin.com/in/prathamesh-ingle-662382342" 
               target="_blank" 
               rel="noreferrer"
               className="relative flex items-center justify-center px-6 py-2 md:py-2.5 bg-[#1a1a1a] rounded-full overflow-hidden group shadow-[0_4px_15px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_25px_rgba(255,140,0,0.4)] transition-all duration-300"
@@ -348,7 +348,7 @@ const Navbar = () => {
             </div>
           </button>
           <a 
-            href="https://linkedin.com/in/prathamesh-ingle" 
+            href="https://www.linkedin.com/in/prathamesh-ingle-662382342" 
             target="_blank" 
             rel="noreferrer"
             onClick={() => setIsOpen(false)} 
