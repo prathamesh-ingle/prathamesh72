@@ -381,7 +381,7 @@ const LandingPage = () => {
           @keyframes node-float-3 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
         `}</style>
 
-        <div className="tech-stack-container relative z-10 w-full max-w-[900px] px-4 md:px-8 flex flex-col items-center gap-5 md:gap-7 pointer-events-auto perspective-1000">
+        <div className="tech-stack-container relative z-10 w-full max-w-[900px] px-4 md:px-8 flex flex-col items-center gap-2 md:gap-4 pointer-events-auto perspective-1000">
           {(() => {
             const rows = [
               [
@@ -416,7 +416,7 @@ const LandingPage = () => {
             return rows.map((row, rowIndex) => (
               <div
                 key={rowIndex}
-                className="flex flex-wrap justify-center items-center gap-3 md:gap-5 w-full"
+                className="flex flex-wrap justify-center items-center gap-1 sm:gap-2 md:gap-4 w-full"
                 data-aos="fade-up"
                 data-aos-delay={rowIndex * 100}
               >
@@ -437,7 +437,7 @@ const LandingPage = () => {
                         style={{ backgroundColor: tech.color }}
                       ></div>
                       <div
-                        className="w-14 h-14 md:w-[72px] md:h-[72px] flex items-center justify-center rounded-full bg-white/80 border border-white shadow-[0_8px_20px_rgba(0,0,0,0.04)] backdrop-blur-2xl transition-all duration-500 group-hover:-translate-y-3 group-hover:scale-110 z-10 relative overflow-hidden"
+                        className="w-12 h-12 sm:w-14 sm:h-14 md:w-[72px] md:h-[72px] flex items-center justify-center rounded-full bg-white/80 border border-white shadow-[0_8px_20px_rgba(0,0,0,0.04)] backdrop-blur-2xl transition-all duration-500 group-hover:-translate-y-3 group-hover:scale-110 z-10 relative overflow-hidden"
                       >
                         <div
                           className="absolute inset-0 border-2 border-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
@@ -796,7 +796,7 @@ const LandingPage = () => {
                 {
                   title: "PayNidhi",
                   desc: "An AI-powered invoice liquidity platform providing secure and instant financing for B2B businesses. Features Cron-based penalty engine and automated NOA generation.",
-                  video: "/video/paynidhi.mp4",
+                  photo: "/photo/paynidhi.png",
                   tags: ["React", "Node.js", "MongoDB", "Express", "Razorpay"],
                   github: "https://github.com/PayNidhi/PayNidhi",
                   live: "https://pay-nidhi.vercel.app/",
@@ -804,7 +804,7 @@ const LandingPage = () => {
                 {
                   title: "LetsChat",
                   desc: "A full‑stack, Gemini‑powered hub unifying AI symptom checking, real‑time chat, Stream‑based video calling, and creative media generation.",
-                  video: "/video/chatmaster.mp4",
+                  photo: "/photo/chatmaster.png",
                   tags: ["React", "Stream", "Tailwind", "Node.js"],
                   github: "https://github.com/prathamesh-ingle/LetsChat",
                   live: "https://letschat-1-r5so.onrender.com/",
@@ -812,7 +812,7 @@ const LandingPage = () => {
                 {
                   title: "Smart ERP",
                   desc: "An integrated college management software that automates student records, attendance, fees, timetable, and exams for large-scale operations.",
-                  video: "/video/erp.mp4",
+                  photo: "/photo/erp.png",
                   tags: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
                   github: "https://github.com/prathamesh-ingle/Smart-ERP-System",
                   live: "#",
@@ -820,7 +820,7 @@ const LandingPage = () => {
                 {
                   title: "Hotel Utsav",
                   desc: "A user-friendly hotel booking platform simplifying stay planning with a comprehensive dashboard for both staff management and guest bookings.",
-                  video: "/video/utsav.mp4",
+                  photo: "/photo/utsav.png",
                   tags: ["PHP", "MySQL", "HTML5", "CSS3"],
                   github: "https://github.com/prathamesh-ingle/hotel-Utsav-hotel-booking",
                   live: "#",
@@ -832,23 +832,13 @@ const LandingPage = () => {
                   key={idx} 
                   className="project-card snap-center group relative bg-white/5 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/10 hover:border-[#ff8c00]/80 transition-all duration-500 hover:shadow-[0_20px_60px_rgba(255,140,0,0.25)] flex flex-col w-[320px] md:w-[420px] shrink-0"
                 >
-                  {/* --- VIDEO THUMBNAIL CONTAINER --- */}
+                  {/* --- IMAGE THUMBNAIL CONTAINER --- */}
                   <div className="relative h-48 md:h-64 w-full overflow-hidden bg-[#0a0a0a]">
-                    <video
+                    <img
                       className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-60 group-hover:opacity-100"
-                      src={project.video}
-                      loop
-                      muted
-                      playsInline
-                      onMouseOver={(e) => e.currentTarget.play()}
-                      onMouseOut={(e) => e.currentTarget.pause()}
+                      src={project.photo}
+                      alt={project.title}
                     />
-
-                    <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
-                      <div className="w-14 h-14 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/90 pl-1 shadow-lg">
-                        <FaPlay size={18} />
-                      </div>
-                    </div>
 
                     <div className="absolute top-0 left-0 w-full h-28 bg-gradient-to-b from-[#1a1a1a]/90 to-transparent z-10 pointer-events-none"></div>
 
