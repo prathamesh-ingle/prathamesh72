@@ -577,32 +577,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-4" data-aos="fade-up" data-aos-delay="400">
-              <div className="flex flex-col p-4 bg-white rounded-2xl border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.02)] hover:shadow-[#ff8c00]/15 hover:border-[#ff8c00]/40 transition-all duration-300">
-                <span className="text-[#ff8c00] text-3xl md:text-4xl font-black mb-1">
-                  MERN
-                </span>
-                <span className="text-[9px] md:text-[10px] text-gray-500 font-bold uppercase tracking-widest">
-                  Stack Expert
-                </span>
-              </div>
-              <div className="flex flex-col p-4 bg-white rounded-2xl border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.02)] hover:shadow-[#ff0055]/15 hover:border-[#ff0055]/40 transition-all duration-300">
-                <span className="text-[#ff0055] text-3xl md:text-4xl font-black mb-1">
-                  PHP
-                </span>
-                <span className="text-[9px] md:text-[10px] text-gray-500 font-bold uppercase tracking-widest">
-                  Enterprise Systems
-                </span>
-              </div>
-              <div className="flex flex-col p-4 bg-white rounded-2xl border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.02)] hover:shadow-gray-200 hover:border-[#1a1a1a]/30 transition-all duration-300">
-                <span className="text-[#1a1a1a] text-3xl md:text-4xl font-black mb-1">
-                  B.Tech
-                </span>
-                <span className="text-[9px] md:text-[10px] text-gray-500 font-bold uppercase tracking-widest">
-                  IT @ DYPCOE’28
-                </span>
-              </div>
-            </div>
+
 
             <div className="flex items-center gap-5 pt-4" data-aos="fade-up" data-aos-delay="500">
               <a
