@@ -581,7 +581,7 @@ const LandingPage = () => {
 
             <div className="flex items-center gap-5 pt-4" data-aos="fade-up" data-aos-delay="500">
               <a
-                href="https://linkedin.com/in/prathamesh-ingle"
+                href="https://www.linkedin.com/in/prathamesh-ingle-662382342"
                 target="_blank" rel="noreferrer"
                 className="px-8 py-4 rounded-full bg-gradient-to-r from-[#ff8c00] to-[#ff0055] text-white font-black text-sm tracking-widest hover:shadow-[0_15px_35px_rgba(255,140,0,0.4)] transition-all hover:-translate-y-1 duration-300"
               >
@@ -921,7 +921,7 @@ const LandingPage = () => {
             </a>
 
             {/* LinkedIn */}
-            <a href="https://linkedin.com/in/prathamesh-ingle" target="_blank" rel="noreferrer" className="contact-card group bg-white rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.03)] border border-gray-100 p-8 flex flex-col items-center justify-center hover:shadow-[0_20px_40px_rgba(10,102,194,0.15)] hover:border-[#0A66C2]/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer relative overflow-hidden">
+            <a href="https://www.linkedin.com/in/prathamesh-ingle-662382342" target="_blank" rel="noreferrer" className="contact-card group bg-white rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.03)] border border-gray-100 p-8 flex flex-col items-center justify-center hover:shadow-[0_20px_40px_rgba(10,102,194,0.15)] hover:border-[#0A66C2]/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-b from-[#0A66C2]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="w-16 h-16 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
                  <FaLinkedinIn size={28} className="text-[#0A66C2]" />
