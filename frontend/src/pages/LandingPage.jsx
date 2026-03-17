@@ -617,7 +617,7 @@ const LandingPage = () => {
                 <div className="w-full h-full rounded-full overflow-hidden border-[6px] border-white shadow-inner relative bg-gray-100 group">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10 pointer-events-none"></div>
                   <img
-                    src="/prathamesh.png"
+                    src="/ingle.png"
                     alt="Prathamesh Ingle"
                     className="w-full h-full object-cover object-[center_top] transition-transform duration-1000 group-hover:scale-110"
                   />
